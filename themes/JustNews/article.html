@@ -42,7 +42,7 @@
 						{{ /OPT.logo }}
 						
 						{{ ^OPT.logo }}
-						<a href="/" rel="home"><img src="https://cdn.jsdelivr.net/gh/whooc/cfblog@master/themes/JustNews/files/logo.png" alt="请自定义OPT.logo"></a>
+						<a href="/" rel="home"><span style="font-size:30px;"><strong>此起彼伏</strong></span></a>
 						{{ /OPT.logo }}
 					</div>
 				</div>
@@ -55,9 +55,7 @@
 						</ul>
 					</nav>
 					<div class="navbar-action pull-right">
-						<div id="j-user-wrap">
-							<a class="login cur" href="/admin">登录</a>
-						</div>
+
 					</div>
 				</div>
 			</div>
@@ -153,6 +151,14 @@
 							{{ /widgetRecentlyList }}									
 						</ul>
 					</div>
+					<div id="newtime-3" class="widget widget_newtime">
+						<h3 class="widget-title">
+							<span>新时间</span></h3>
+					        <a href="https://time.is/Guangzhou" id="time_is_link" rel="nofollow" style="font-size:16px">广州时间:</a>
+                            <span id="Guangzhou_z43d" style="font-size:16px"></span>
+                            <script src="//widget.time.is/zh.js"></script>
+                            <script>time_is_widget.init({Guangzhou_z43d:{template:"TIME<br>DATE<br>SUN", date_format:"yy-monthnum-daynumdayname", sun_format:"日出: srhour:srminute 日落: sshour:ssminute<br>昼长: dlhours时 dlminutes分", coords:"23.1166700,113.2500000"}});</script>
+                    </div>
 					<div id="categories-3" class="widget widget_categories">
 						<h3 class="widget-title">
 							<span>分类目录</span></h3>
@@ -175,7 +181,7 @@
 
 					<div id="linkcat-0" class="widget widget_links">
 						<h3 class="widget-title">
-							<span>链接</span></h3>
+							<span>友情链接</span></h3>
 						<ul class='xoxo blogroll'>
 							{{ #widgetLinkList }}
 									<li><a href="{{ &url }}" target="_blank">{{ &title }}</a></li>
